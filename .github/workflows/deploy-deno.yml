@@ -22,7 +22,7 @@ on:
         default: false
 
 env:
-  SUBSTORE_REPO: sub-store-org/Sub-Store
+  SUBSTORE_REPO: ${{ vars.SUBSTORE_REPO || 'sub-store-org/Sub-Store' }}
 
 jobs:
   check-updates:

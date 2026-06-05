@@ -39,6 +39,7 @@ jobs:
       - name: Fetch Sub-Store source
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          SUBSTORE_REPO: ${{ vars.SUBSTORE_REPO || 'sub-store-org/Sub-Store' }}
         run: bash scripts/fetch-substore.sh
 
       - name: Install dependencies
@@ -118,6 +119,7 @@ jobs:
       - name: Fetch Sub-Store source
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          SUBSTORE_REPO: ${{ vars.SUBSTORE_REPO || 'sub-store-org/Sub-Store' }}
         run: bash scripts/fetch-substore.sh
 
       - name: Install dependencies

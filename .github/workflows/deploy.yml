@@ -31,7 +31,7 @@ on:
           - skip
 
 env:
-  SUBSTORE_REPO: sub-store-org/Sub-Store
+  SUBSTORE_REPO: ${{ vars.SUBSTORE_REPO || 'sub-store-org/Sub-Store' }}
   FRONTEND_REPO: sub-store-org/Sub-Store-Front-End
 
 jobs:
